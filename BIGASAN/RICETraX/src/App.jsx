@@ -1,5 +1,5 @@
 import {BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import Orders from '../pages/Customers/OrdersPage.jsx';
+import Inventory from '../pages/inner-inventory.jsx';
 import Login from '../pages/Admin/Login.jsx'
 import Dashboard from '../pages/Admin/Dashboard.jsx';
 import Reports from '../pages/Admin/Reports.jsx'
@@ -13,7 +13,7 @@ function App() {
     <>
         <Routes>
           {}
-          <Route path="" element={<Navigate to="/Admin-Login" />} />
+          <Route path="" element={<Navigate to="/inventory" />} />
           
           {/* Admin */}
           <Route path="/Admin-Login" element={<Login/>} />
@@ -21,6 +21,7 @@ function App() {
           <Route path="/Admin-Reports" element={<Reports/>} />
           <Route path="/Admin-OnlineOrders" element={<OnlineOrders/>} />
           <Route path="/Admin-Settings" element={<Settings/>} />
+          <Route path="/inventory" element={<Inventory/>} />
 
 
           {/* Customer */}
