@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import '../pages/POS.css'
 
 function POS() {
   const [products, setProducts] = useState([]);
@@ -47,11 +48,11 @@ function POS() {
       <div className="sidebar">
         <div className="logo">🌾 RiceTrack</div>
         <nav>
-          <button>Dashboard</button>
-          <button>Inventory</button>
-          <button className="active">POS</button>
-          <button>Notification</button>
-          <button>Settings</button>
+        <button><i className="fas fa-tachometer-alt"></i> Dashboard</button>
+        <button><i className="fas fa-boxes"></i> Inventory</button>
+        <button className="active"><i className="fas fa-cash-register"></i> POS</button>
+        <button><i className="fas fa-bell"></i> Notification</button>
+        <button><i className="fas fa-cog"></i> Settings</button>
         </nav>
         <button className="logout">Log out</button>
       </div>
@@ -66,6 +67,8 @@ function POS() {
           <div className="products">
             <button onClick={() => addProduct("Maharlika", 58)}>Maharlika</button>
             <button onClick={() => addProduct("Dinorado", 60)}>Dinorado</button>
+            <button onClick={() => addProduct("Jasmine", 100)}>Jasmine</button>
+            <button onClick={() => addProduct("Top Rice", 60)}>Top Rice</button>
           </div>
 
           <div className="receipt">

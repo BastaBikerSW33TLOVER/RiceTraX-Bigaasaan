@@ -1,5 +1,7 @@
 import {BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import POS from '../pages/POS.jsx'
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 
 
