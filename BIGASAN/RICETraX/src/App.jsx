@@ -1,6 +1,8 @@
+
 import {BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import POS from '../pages/POS.jsx'
 import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 
 
@@ -10,6 +12,7 @@ function App() {
     <>
         <Routes>
           {}
+
           <Route path="" element={<Navigate to="/POS" />} />
           
           {/* Admin */}
@@ -17,6 +20,7 @@ function App() {
           <Route path="/POS" element={<POS/>} />
           
          
+
 
 
           {/* Customer */}
