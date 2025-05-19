@@ -69,6 +69,7 @@ function POS() {
             <button onClick={() => addProduct("Dinorado", 60)}>Dinorado</button>
             <button onClick={() => addProduct("Jasmine", 100)}>Jasmine</button>
             <button onClick={() => addProduct("Top Rice", 60)}>Top Rice</button>
+            <button onClick={() => addProduct("Sinandomeng", 60)}>Sinandomeng</button>
           </div>
 
           <div className="receipt">
