@@ -1,164 +1,184 @@
-/* General Reset */
-body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  /* Sidebar */
-  .sidebar {
-    width: 200px;
-    background-color: #a8d08d;
-    color: #000;
-    padding: 20px;
-    height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-  }
-  
-  .logo {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .sidebar nav button,
-  .logout {
-    background: none;
-    border: none;
-    padding: 10px 0;
-    font-size: 16px;
-    cursor: pointer;
-    width: 100%;
-    text-align: left;
-  }
-  
-  .sidebar nav button.active {
-    background-color: white;
-    border-radius: 5px;
-    font-weight: bold;
-  }
-  
-  /* Main Layout */
-  .main {
-    margin-left: 220px; /* add margin to accommodate fixed sidebar */
-    padding: 20px;
-    background-color: #f7f7f7;
-    min-height: 100vh;
-    box-sizing: border-box;
-  }
-  
-  /* Header */
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .header input[type="text"] {
-    width: 300px;
-    padding: 8px;
-    font-size: 16px;
-  }
-  
-  /* Content Layout */
-  .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px; /* spacing between products and receipt */
-  }
-  
-  /* Product Buttons Column */
-  .products {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 45%;
-    margin-left: 20px;
-  }
-  
-  /* Product Buttons */
-  .products button {
-    padding: 15px;
-    font-size: 18px;
-    border: none;
-    border-radius: 8px;
-    background-color: #4caf50;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .products button:hover {
-    background-color: #45a049;
-  }
-  
-  /* Receipt Section */
-  .receipt {
-    width: 50%;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  
-  .receipt table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-  }
-  
-  .receipt th, .receipt td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  /* Summary Section */
-  .summary {
-    font-size: 16px;
-  }
-  
-  .summary div {
-    margin: 10px 0;
-  }
-  
-  .summary input[type="number"] {
-    width: 120px;
-    padding: 5px;
-    font-size: 16px;
-  }
-  
-  /* Download Button */
-  .receipt button {
-    background-color: #4caf50;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-  
-  .receipt button:hover {
-    background-color: #388e3c;
-  }
-  .receipt {
-    width: 50%;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin-left: auto; /* Pushes it to the right side */
-  }
-  .content {
-    display: flex;
-    justify-content: flex-end; /* Push content to the right */
-    align-items: flex-start;
-    gap: 40px;
-  }
+  /* General Reset */
+  body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
     
+    /* Sidebar */
+    .sidebar {
+      width: 200px;
+      background-color: #4CAF50;
+      color: #000;
+      padding: 20px;
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+    }
+    
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    
+    .sidebar nav button,
+    .logout {
+      background: none;
+      border: none;
+      padding: 10px 0;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+      text-align: left;
+    }
+    
+    .sidebar nav button.active {
+      background-color: white;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    
+    /* Main Layout */
+    .main {
+      margin-left: 220px; /* add margin to accommodate fixed sidebar */
+      padding: 20px;
+      background-color: #f7f7f7;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+    
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      margin-left: 20px;
+    }
+    
+    .header input[type="text"] {
+      width: 300px;
+      padding: 8px;
+      font-size: 16px;
+      margin-left: 80px;
+      
+    }
+    .header .datetime {
+      margin-right: 100px;
+    }
+  
+    
+    /* Content Layout */
+    .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 40px; /* spacing between products and receipt */
+    }
+    
+    /* Product Buttons Column */
+    .products button {
+      width: 50%;
+      height: 100px; /* Increased height */
+      font-size: 1.7rem; /* Larger text */
+      font-weight: bold;
+      background-color: #4CAF50;
+      color: rgb(0, 0, 0);
+      border: none;
+      border-radius: 12px; /* Slightly more rounded */
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+     margin-bottom: 20px;
+     margin-left: 100px;
+     margin-top: 10px;
+    }
+    
+    .products button:hover {
+      background-color: #43a047;
+    }
+    
+    
+    .products button:hover {
+      background-color: #45a049;
+    }
+    
+    /* Receipt Section */
+    .receipt {
+      width: 100%;
+      background-color: rgb(255, 255, 255);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 100px 100px rgba(117, 23, 23, 0.1);
+      margin-right: 100px;
+      height: 560px;
+      font-weight: bold;
+    }
+
+    .download-btn{
+     
+      
+    }
+    
+    .receipt table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    
+      
+    }
+    
+    .receipt th, .receipt td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    /* Summary Section */
+    .summary {
+      font-size: 16px;
+    }
+    
+    .summary div {
+      margin: 10px 0;
+    }
+    
+    .summary input[type="number"] {
+      width: 120px;
+      padding: 5px;
+      font-size: 16px;
+    }
+    
+    /* Download Button */
+    .receipt button {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    
+    .receipt button:hover {
+      background-color: #388e3c;
+    }
+    .receipt {
+      width: 50%;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-left: auto; /* Pushes it to the right side */
+    }
+    .content {
+      display: flexbox;
+      justify-content: flex-end; /* Push content to the right */
+      align-items: flex-start;
+      gap: 200px;
+    }
+      

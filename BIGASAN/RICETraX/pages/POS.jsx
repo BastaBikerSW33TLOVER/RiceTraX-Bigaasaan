@@ -54,7 +54,7 @@ function POS() {
         <button><i className="fas fa-bell"></i> Notification</button>
         <button><i className="fas fa-cog"></i> Settings</button>
         </nav>
-        <button className="logout">Log out</button>
+        <button className="logout">➡ Log out</button>
       </div>
 
       <div className="main">
@@ -70,6 +70,7 @@ function POS() {
             <button onClick={() => addProduct("Jasmine", 100)}>Jasmine</button>
             <button onClick={() => addProduct("Top Rice", 60)}>Top Rice</button>
             <button onClick={() => addProduct("Sinandomeng", 60)}>Sinandomeng</button>
+            
           </div>
 
           <div className="receipt">
@@ -107,7 +108,10 @@ function POS() {
               <div>Change: ₱<span>{change.toFixed(2)}</span></div>
             </div>
 
-            <button onClick={downloadReceipt}>⬇ Download</button>
+                        <button className="download-btn" onClick={downloadReceipt}>
+              ⬇ Download
+            </button>
+
           </div>
         </div>
       </div>
